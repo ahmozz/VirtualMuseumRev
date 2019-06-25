@@ -4,12 +4,12 @@
 
 			{"type":"soleil" , "nom":"soleil", "params":{}},
 
-			{"type":"ampoule", "nom":"ampoule01", "params":{"couleur":"bleu","intensite":1.0,"portee":45.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule02", "params":{"couleur":"bleu","intensite":1.0,"portee":45.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule03", "params":{"couleur":"bleu","intensite":1.0,"portee":45.0,"attenuation":2.0}},
+			{"type":"ampoule", "nom":"ampoule01", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
+			{"type":"ampoule", "nom":"ampoule02", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
+			{"type":"ampoule", "nom":"ampoule03", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
 
-			{"type":"ampoule", "nom":"ampoule04", "params":{"couleur":"bleu","intensite":1.0,"portee":5.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule05", "params":{"couleur":"bleu","intensite":1.0,"portee":5.0,"attenuation":2.0}},
+			{"type":"ampoule", "nom":"ampoule04", "params":{"couleur":"bleu","intensite":1.5,"portee":5.0,"attenuation":2.0}},
+			{"type":"ampoule", "nom":"ampoule05", "params":{"couleur":"bleu","intensite":1.5,"portee":5.0,"attenuation":2.0}},
 
 			{"type":"light", "nom":"directLight", "params":{"couleur":"blanche","intensite":1}},
 
@@ -334,6 +334,36 @@
 				"epaisseur":0.5,
 				"url":"assets/posters/trevarez/coffre-charbon.jpg"}},
 
+		{"type":"poster", "nom":"up_poster01",
+			"params":{"largeur":2.0,
+				"hauteur":20.0,
+				"epaisseur":5.5,
+				"url":"assets/posters/peint17.jpg"}},
+
+		{"type":"poster", "nom":"up_poster02",
+			"params":{"largeur":2.0,
+				"hauteur":2.0,
+				"epaisseur":0.5,
+				"url":"assets/posters/peint18.jpg"}},
+
+		{"type":"poster", "nom":"up_poster03",
+			"params":{"largeur":2.0,
+				"hauteur":2.0,
+				"epaisseur":0.5,
+				"url":"assets/posters/peint19.jpg"}},
+
+		{"type":"poster", "nom":"up_poster04",
+			"params":{"largeur":2.0,
+				"hauteur":2.0,
+				"epaisseur":0.5,
+				"url":"assets/posters/peint20.jpg"}},
+
+		{"type":"poster", "nom":"up_poster05",
+			"params":{"largeur":2.0,
+				"hauteur":2.0,
+				"epaisseur":0.5,
+				"url":"assets/posters/pays1.jpg"}},
+
 				{"type":"cloison", "nom":"cloison03",
 	                                           "params":{"largeur":30.0,
 	                                                     "hauteur":1.0,
@@ -548,22 +578,22 @@
                                                     "epaisseur":0.2,
                                                     "materiau":"textureDante"}},
 
-			{"type":"cloison", "nom":"up_clois01",
+			{"type":"cloison", "nom":"cloisupp01",
                                            "params":{"largeur":15,
                                                      "hauteur":3.0,
                                                      "epaisseur":0.2,
-                                                     "materiau":"textureDante3"}},
-			{"type":"cloison", "nom":"up_clois02",
+                                                     "materiau":"textureDante"}},
+			{"type":"cloison", "nom":"cloisupp02",
                                            "params":{"largeur":27.5,
                                                      "hauteur":3.0,
                                                      "epaisseur":0.2,
                                                      "materiau":"textureDante3"}},
-			{"type":"cloison", "nom":"up_clois03",
+			{"type":"cloison", "nom":"cloisupp03",
                                            "params":{"largeur":30,
                                                      "hauteur":3.0,
                                                      "epaisseur":0.2,
                                                      "materiau":"textureDante3"}},
-		 {"type":"cloison", "nom":"up_clois04",
+		 {"type":"cloison", "nom":"cloisupp04",
                                           "params":{"largeur":15,
                                                     "hauteur":3.0,
                                                     "epaisseur":0.2,
@@ -669,7 +699,13 @@
 			{"fonc":"placerXYZ", "objet":"peint15", "params":{"x":0, "y":1.5,"z":0.2}},
 			{"fonc":"placerXYZ", "objet":"peint16", "params":{"x":0, "y":1.5,"z":0.2}},
 
-			{"fonc":"placerXYZ", "objet":"picasso1", "params":{"x":-4, "y":1.5,"z":0.2}},
+			{"fonc":"placerXYZ", "objet":"up_poster01", "params":{"x":0, "y":0.5,"z":0.2}},
+			{"fonc":"placerXYZ", "objet":"up_poster02", "params":{"x":0, "y":0.5,"z":0.2}},
+			{"fonc":"placerXYZ", "objet":"up_poster03", "params":{"x":5, "y":0.8,"z":0.2}},
+			{"fonc":"placerXYZ", "objet":"up_poster04", "params":{"x":2, "y":0.5,"z":0.2}},
+			{"fonc":"placerXYZ", "objet":"up_poster05", "params":{"x":1, "y":0.5,"z":0.2}},
+
+		{"fonc":"placerXYZ", "objet":"picasso1", "params":{"x":-4, "y":1.5,"z":0.2}},
 			{"fonc":"placerXYZ", "objet":"picasso2", "params":{"x":0, "y":1.5,"z":0.2}},
 			{"fonc":"placerXYZ", "objet":"picasso4", "params":{"x":4, "y":1.5,"z":0.2}},
 
@@ -734,15 +770,15 @@
 			{"fonc":"placerXYZ", "objet":"upstairs", "params":{"x":7.5, "y":0.0,"z":10}},
 			{"fonc":"orienterX", "objet":"upstairs", "params":{"angle":1.57}},
 
-			{"fonc":"placerXYZ", "objet":"up_clois01", "params":{"x":-7.5, "y":0.0,"z":17.5}},
-			{"fonc":"orienterY", "objet":"up_clois01", "params":{"angle":1.57}},
+			{"fonc":"placerXYZ", "objet":"cloisupp01", "params":{"x":-7.5, "y":15.0,"z":17.5}},
+			{"fonc":"orienterY", "objet":"cloisupp01", "params":{"angle":1.57}},
 
-			{"fonc":"placerXYZ", "objet":"up_clois02", "params":{"x":6.3, "y":0.0,"z":10}},
+			{"fonc":"placerXYZ", "objet":"cloisupp02", "params":{"x":6.3, "y":5.0,"z":10}},
 
-			{"fonc":"placerXYZ", "objet":"up_clois03", "params":{"x":7.5, "y":0.0,"z":25}},
+			{"fonc":"placerXYZ", "objet":"cloisupp03", "params":{"x":7.5, "y":0.0,"z":25}},
 
-			{"fonc":"placerXYZ", "objet":"up_clois04", "params":{"x":22.5, "y":0.0,"z":17.5}},
-			{"fonc":"orienterY", "objet":"up_clois04", "params":{"angle":1.57}},
+			{"fonc":"placerXYZ", "objet":"cloisupp04", "params":{"x":22.5, "y":0.0,"z":17.5}},
+			{"fonc":"orienterY", "objet":"cloisupp04", "params":{"angle":1.57}},
 
 			{"fonc":"placerXYZ", "objet":"escalier_1", "params":{"x":-6.1, "y":0.0,"z":9.8}},
 			{"fonc":"placerXYZ", "objet":"escalier_2", "params":{"x":-6.1, "y":0.0,"z":9.1}},
@@ -798,11 +834,10 @@
 			{"rel":"parentDe","sujet":"flowerGrp2","objet":"flowersGround4_1"},
 
 			{"rel":"parentDe","sujet":"gr07","objet":"upstairs"},
-			{"rel":"parentDe","sujet":"gr07","objet":"up_clois01"},
-			{"rel":"parentDe","sujet":"gr07","objet":"up_clois02"},
-			{"rel":"parentDe","sujet":"gr07","objet":"up_clois03"},
-			{"rel":"parentDe","sujet":"gr07","objet":"up_clois04"},
-
+			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp01"},
+			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp02"},
+			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp03"},
+			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp04"},
 
 			{"rel":"parentDe","sujet":"gr02","objet":"cloison03"},
 			{"rel":"parentDe","sujet":"gr02","objet":"cloison04"},
@@ -911,25 +946,13 @@
 			{"rel":"parentDe","sujet":"cloison11","objet":"16century"},
 
 
-
 			{"rel":"parentDe","sujet":"cloi","objet":"guernica1"},
 			{"rel":"parentDe","sujet":"cloison11","objet":"tunisie"},
 			{"rel":"parentDe","sujet":"cloison11","objet":"16century"},
 
-		{"rel":"parentDe","sujet":"up_clois01","objet":"guernica1"},
-		{"rel":"parentDe","sujet":"up_clois01","objet":"tunisie"},
-		{"rel":"parentDe","sujet":"up_clois01","objet":"16century"},
-
-		{"rel":"parentDe","sujet":"up_clois02","objet":"guernica1"},
-		{"rel":"parentDe","sujet":"up_clois02","objet":"tunisie"},
-		{"rel":"parentDe","sujet":"up_clois02","objet":"16century"},
-
-		{"rel":"parentDe","sujet":"up_clois03","objet":"guernica1"},
-		{"rel":"parentDe","sujet":"up_clois03","objet":"tunisie"},
-		{"rel":"parentDe","sujet":"up_clois03","objet":"16century"},
-
-		{"rel":"parentDe","sujet":"up_clois04","objet":"guernica1"},
-		{"rel":"parentDe","sujet":"up_clois04","objet":"tunisie"},
-		{"rel":"parentDe","sujet":"up_clois04","objet":"16century"}
+			{"rel":"parentDe","sujet":"cloisupp01","objet":"up_poster01"},
+			{"rel":"parentDe","sujet":"cloisupp02","objet":"up_poster02"},
+			{"rel":"parentDe","sujet":"cloisupp03","objet":"up_poster03"},
+			{"rel":"parentDe","sujet":"cloisupp04","objet":"up_poster04"}
 	]
 }
