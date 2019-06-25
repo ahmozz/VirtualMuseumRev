@@ -1,958 +1,3318 @@
 {
-	"objets" : [
-
-
-			{"type":"soleil" , "nom":"soleil", "params":{}},
-
-			{"type":"ampoule", "nom":"ampoule01", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule02", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule03", "params":{"couleur":"bleu","intensite":1.5,"portee":45.0,"attenuation":2.0}},
-
-			{"type":"ampoule", "nom":"ampoule04", "params":{"couleur":"bleu","intensite":1.5,"portee":5.0,"attenuation":2.0}},
-			{"type":"ampoule", "nom":"ampoule05", "params":{"couleur":"bleu","intensite":1.5,"portee":5.0,"attenuation":2.0}},
-
-			{"type":"light", "nom":"directLight", "params":{"couleur":"blanche","intensite":1}},
-
-			{"type":"lambertTexture", "nom":"textureDante",
-                                                  "params":{"image":"assets/textures/murs/iron2.jpg",
-                                                  "couleur":"gris","nx":2,"ny":2}},
-			{"type":"lambertTexture", "nom":"textureDante2",
-                                                  "params":{"image":"assets/textures/murs/greybriks.jpg",
-                                                  "couleur":"gris","nx":1,"ny":1}},
-			{"type":"lambertTexture", "nom":"textureDante3",
-                                                  "params":{"image":"assets/textures/murs/japan009.jpg", "couleur":"gris","nx":3,"ny":3}},
-
-			{"type":"lambertTexture", "nom":"textureDore", "params":{"image":"assets/textures/murs/gold.jpg",
-					"nx":4,"ny":4}},
-
-			{"type":"lambertTexture", "nom":"textureSol",
-                                                  "params":{"image":"assets/textures/sols_plafonds/ground_floor.jpg",
-                                                  "couleur":"gris","nx":50,"ny":50}},
-			{"type":"lambertTexture", "nom":"textureSolMus",
-                                                  "params":{"image":"assets/textures/sols_plafonds/iron.jpg",
-                                                  "couleur":"gris","nx":3,"ny":3}},
-			{"type":"lambertTexture", "nom":"textureGarden",
-	                                                "params":{"image":"assets/textures/sols_plafonds/Grass.jpg",
-	                                                "couleur":"gris","nx":10,"ny":10}},
-			{"type":"lambertTexture", "nom":"textureGarden",
-	                                                "params":{"image":"assets/textures/sols_plafonds/Grass.jpg",
-	                                                "couleur":"gris","nx":10,"ny":10}},
-		  {"type":"lambertTexture", "nom":"tapisTexture",
-                                                  "params":{"image":"assets/textures/sols_plafonds/tapis.jpeg",
-                                                  "couleur":"gris","nx":50,"ny":50}},
-
-			{"type":"lambertTexture", "nom":"textureMur1",
-	                                                "params":{"image":"assets/textures/murs/dante.jpg",
-	                                                "couleur":"gris","nx":50,"ny":50}},
-
-			{"type":"lambertTexture", "nom":"flowerTexture",
-	                                                "params":{"image":"assets/textures/sols_plafonds/yellFlows.jpg",
-	                                                "couleur":"gris","nx":5,"ny":5}},
-
-
-			{"type":"groupe",  "nom":"gr01","params":{}},
-			{"type":"groupe",  "nom":"gr02","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr03","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr04","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr05","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr05_1","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr05_2","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr05_3","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr05_4","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr06","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr07","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"flowerGrp","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"flowerGrp2","params":{"materiau":"textureMur"}},
-			{"type":"groupe",  "nom":"gr_escalier","params":{"materiau":"textureMur"}},
-
-			{"type":"sol",     "nom":"sol",
-                                           "params":{"largeur":100.0,"profondeur":100.0,"materiau":"textureSol"}},
-
- 		  {"type":"sol",     "nom":"solMus",
-                                          "params":{"largeur":30.0, "profondeur":30.0,"materiau":"textureSolMus"}},
-
-			{"type":"cloison", "nom":"upstairs",
-                                           "params":{"largeur":30.0,
-                                                     "hauteur":15.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureSolMus"}},
-
-			{"type":"sol",     "nom":"garden1",
-                                          "params":{"largeur":13.0, "profondeur":30.0,"materiau":"textureGarden"}},
-
-			{"type":"sol",     "nom":"garden2",
-                                          "params":{"largeur":13.0, "profondeur":30.0,"materiau":"textureGarden"}},
-
-			{"type":"sol",     "nom":"tapis",
-                                          "params":{"largeur":3.0, "profondeur":30.0,"materiau":"tapisTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround",
-                                          "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround2",
-                                          "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround3",
-		                                      "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround4",
-		                                      "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround_1",
-			                                    "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround2_1",
-			                                    "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround3_1",
-			                                    "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-			{"type":"sol",     "nom":"flowersGround4_1",
-			                                    "params":{"largeur":4.0, "profondeur": 8.0, "materiau":"flowerTexture"}},
-
-
-		{"type":"poster", "nom":"poster01",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/france.jpeg"}},
-		{"type":"poster", "nom":"poster02",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/img1.jpg"}},
-
-		{"type":"poster", "nom":"poster03",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/img2.jpg"}},
-		{"type":"poster", "nom":"poster04",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/img3.jpg"}},
-
-		{"type":"poster", "nom":"poster05",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/img4.jpg"}},
-		{"type":"poster", "nom":"poster06",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/monalisa.jpg"}},
-
-		{"type":"poster", "nom":"poster07",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/cuisine.jpg"}},
-		{"type":"poster", "nom":"poster08",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/coffre-charbon.jpg"}},
-
-		{"type":"poster", "nom":"pays1",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/tab1.jpg"}},
-
-		{"type":"poster", "nom":"pays2",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/tab2.jpg"}},
-
-		{"type":"poster", "nom":"pays3",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/tab3.jpg"}},
-
-		{"type":"poster", "nom":"pays4",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/tab4.jpeg"}},
-
-		{"type":"poster", "nom":"hannibal",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/hannibal.jpg"}},
-
-		{"type":"poster", "nom":"romains",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/romains.jpg"}},
-
-		{"type":"poster", "nom":"peint1",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint1.jpg"}},
-
-		{"type":"poster", "nom":"peint2",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint2.jpg"}},
-
-
-		{"type":"poster", "nom":"peint3",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint3.jpg"}},
-
-		{"type":"poster", "nom":"peint4",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint4.jpg"}},
-
-		{"type":"poster", "nom":"peint5",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint5.jpg"}},
-
-		{"type":"poster", "nom":"peint6",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint6.jpg"}},
-
-		{"type":"poster", "nom":"peint7",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint7.jpg"}},
-
-		{"type":"poster", "nom":"peint8",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint8.jpg"}},
-
-		{"type":"poster", "nom":"peint9",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint9.jpg"}},
-
-		{"type":"poster", "nom":"peint10",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint10.jpg"}},
-		{"type":"poster", "nom":"peint11",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint11.jpg"}},
-
-		{"type":"poster", "nom":"peint12",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint12.jpg"}},
-
-		{"type":"poster", "nom":"peint13",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint13.jpg"}},
-
-		{"type":"poster", "nom":"peint14",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint14.jpg"}},
-
-		{"type":"poster", "nom":"peint15",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint15.jpg"}},
-		{"type":"poster", "nom":"peint16",
-			"params":{"largeur":4.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint16.jpg"}},
-
-		{"type":"poster", "nom":"tunisie",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/tunisie.jpg"}},
-
-		{"type":"poster", "nom":"picasso1",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/picasso1.jpg"}},
-
-		{"type":"poster", "nom":"picasso2",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/picasso2.jpg"}},
-
-		{"type":"poster", "nom":"guernica1",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/guernica1.jpeg"}},
-
-		{"type":"poster", "nom":"picasso4",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/picasso4.jpeg"}},
-
-		{"type":"poster", "nom":"egypt",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/egypt.jpg"}},
-
-		{"type":"poster", "nom":"16century",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/16century.jpg"}},
-
-		{"type":"poster", "nom":"poster08",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/trevarez/coffre-charbon.jpg"}},
-
-		{"type":"poster", "nom":"up_poster01",
-			"params":{"largeur":2.0,
-				"hauteur":20.0,
-				"epaisseur":5.5,
-				"url":"assets/posters/peint17.jpg"}},
-
-		{"type":"poster", "nom":"up_poster02",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint18.jpg"}},
-
-		{"type":"poster", "nom":"up_poster03",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint19.jpg"}},
-
-		{"type":"poster", "nom":"up_poster04",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/peint20.jpg"}},
-
-		{"type":"poster", "nom":"up_poster05",
-			"params":{"largeur":2.0,
-				"hauteur":2.0,
-				"epaisseur":0.5,
-				"url":"assets/posters/pays1.jpg"}},
-
-				{"type":"cloison", "nom":"cloison03",
-	                                           "params":{"largeur":30.0,
-	                                                     "hauteur":1.0,
-	                                                     "epaisseur":0.2,
-	                                                     "materiau":"textureDore"}},
-			{"type":"cloison", "nom":"cloison04",
-                                           "params":{"largeur":13,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloison05",
-                                           "params":{"largeur":13,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante"}},
-
-
-			{"type":"cloison", "nom":"cloison06",
-                                           "params":{"largeur":30,
-                                                     "hauteur":1.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDore"}},
-			{"type":"cloison", "nom":"cloison07",
-                                           "params":{"largeur":15,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloison08",
-                                           "params":{"largeur":15,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante"}},
-		 {"type":"cloison", "nom":"cloison09",
-                                          "params":{"largeur":30,
-                                                    "hauteur":1.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDore"}},
-			{"type":"cloison", "nom":"cloison10",
-                                          "params":{"largeur":15,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloison11",
-                                          "params":{"largeur":15,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloison12",
-                                           "params":{"largeur":10,
-                                                     "hauteur":1.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDore"}},
- 			{"type":"cloison", "nom":"cloison13",
-                                           "params":{"largeur":4,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante2"}},
- 			{"type":"cloison", "nom":"cloison14",
-                                           "params":{"largeur":4,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison12_1",
-                                           "params":{"largeur":10,
-                                                     "hauteur":1.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDore"}},
- 			{"type":"cloison", "nom":"cloison13_1",
-                                           "params":{"largeur":4,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante2"}},
-
-		 {"type":"cloison", "nom":"escalier_1",
-	                                        "params":{"largeur":2,
-	                                                  "hauteur":4,
-	                                                  "epaisseur":1,
-	                                                  "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_2",
-	                                        "params":{"largeur":2,
-	                                                  "hauteur":3.5,
-	                                                  "epaisseur":1,
-	                                                  "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_3",
-	                                        "params":{"largeur":2,
-	                                                  "hauteur":3.0,
-	                                                  "epaisseur":1,
-	                                                  "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_4",
-		                                      "params":{"largeur":2,
-		                                                "hauteur":2.5,
-		                                                "epaisseur":1,
-		                                                "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_5",
-		                                      "params":{"largeur":2,
-		                                                "hauteur":2.0,
-		                                                "epaisseur":1,
-		                                                "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_6",
-		                                      "params":{"largeur":2,
-		                                                "hauteur":1.5,
-		                                                "epaisseur":1,
-		                                                "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_7",
-		                                      "params":{"largeur":2,
-		                                                "hauteur":1,
-		                                                "epaisseur":1,
-		                                                "materiau":"textureDante2"}},
-		{"type":"cloison", "nom":"escalier_8",
-		                                      "params":{"largeur":2,
-		                                                "hauteur":0.5,
-		                                                "epaisseur":1,
-		                                                "materiau":"textureDante2"}},
-		 {"type":"cloison", "nom":"cloison14_1",
-                                          "params":{"largeur":4,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante2"}},
-
-		{"type":"cloison", "nom":"cloison12_2",
-
-										"params":{"largeur":10,
-											"hauteur":1.0,
-											"epaisseur":0.2,
-											"materiau":"textureDore"}},
-
-		{"type":"cloison", "nom":"cloison13_2",
-										"params":{"largeur":4,
-											"hauteur":3.0,
-											"epaisseur":0.2,
-											"materiau":"textureDante2"}},
-
-		{"type":"cloison", "nom":"cloison14_2",
-										"params":{"largeur":4,
-															"hauteur":3.0,
-															"epaisseur":0.2,
-															"materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison12_3",
-										 "params":{"largeur":15,
-															 "hauteur":1.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDore"}},
-			{"type":"cloison", "nom":"cloison13_3",
-										 "params":{"largeur":6,
-															 "hauteur":3.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison14_3",
-										"params":{"largeur":6,
-															"hauteur":3.0,
-															"epaisseur":0.2,
-															"materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison13_3o",
-										 "params":{"largeur":6,
-															 "hauteur":3.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison14_3o",
-										"params":{"largeur":6,
-															"hauteur":3.0,
-															"epaisseur":0.2,
-															"materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison12_4",
-										 "params":{"largeur":15,
-															 "hauteur":1.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDore"}},
-			{"type":"cloison", "nom":"cloison13_4",
-										 "params":{"largeur":6,
-															 "hauteur":3.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison14_4",
-										"params":{"largeur":6,
-															"hauteur":3.0,
-															"epaisseur":0.2,
-															"materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison13_4o",
-										 "params":{"largeur":6,
-															 "hauteur":3.0,
-															 "epaisseur":0.2,
-															 "materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison14_4o",
-										"params":{"largeur":6,
-															"hauteur":3.0,
-															"epaisseur":0.2,
-															"materiau":"textureDante2"}},
-
-			{"type":"cloison", "nom":"cloison15",
-	                                         "params":{"largeur":30,
-	                                                   "hauteur":1.0,
-	                                                   "epaisseur":0.2,
-	                                                   "materiau":"textureDore"}},
-
-			{"type":"cloison", "nom":"cloison16",
-                                          "params":{"largeur":15,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloison17",
-                                          "params":{"largeur":15,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante"}},
-
-			{"type":"cloison", "nom":"cloisupp01",
-                                           "params":{"largeur":15,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante"}},
-			{"type":"cloison", "nom":"cloisupp02",
-                                           "params":{"largeur":27.5,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante3"}},
-			{"type":"cloison", "nom":"cloisupp03",
-                                           "params":{"largeur":30,
-                                                     "hauteur":3.0,
-                                                     "epaisseur":0.2,
-                                                     "materiau":"textureDante3"}},
-		 {"type":"cloison", "nom":"cloisupp04",
-                                          "params":{"largeur":15,
-                                                    "hauteur":3.0,
-                                                    "epaisseur":0.2,
-                                                    "materiau":"textureDante3"}},
-
-			{"type":"audio","nom":"son1",
-                                        "params":{"url":"assets/sounds/oiseaux/piste_10.mp3",
-                                                  "loop":true}}
-
-		    ],
-	"actions" : [
-			{"fonc":"placerXYZ", "objet":"ampoule01", "params":{"x":-10, "y":3,"z":18}},
-			{"fonc":"placerXYZ", "objet":"ampoule02", "params":{"x":-10, "y":3,"z":18}},
-			{"fonc":"placerXYZ", "objet":"ampoule03", "params":{"x":-10, "y":3,"z":18}},
-			{"fonc":"placerXYZ", "objet":"ampoule04", "params":{"x":11, "y":3,"z":15}},
-			{"fonc":"placerXYZ", "objet":"ampoule05", "params":{"x":-11, "y":3,"z":15}},
-
-
-			{"fonc":"orienterY", "objet":"gr01", "params":{"angle":0.785398163}},
-			{"fonc":"placerXYZ", "objet":"gr01", "params":{"x":-2, "y":-0.5,"z":3}},
-			{"fonc":"placerXYZ", "objet":"gr02", "params":{"x":20, "y":0,"z":-5}},
-			{"fonc":"placerXYZ", "objet":"gr03", "params":{"x":20, "y":0,"z":45}},
-			{"fonc":"orienterY", "objet":"gr03", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"gr04", "params":{"x":25, "y":0,"z":20}},
-			{"fonc":"orienterY", "objet":"gr04", "params":{"angle":1.57}},
-			{"fonc":"placerXYZ", "objet":"gr05", "params":{"x":20, "y":0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"gr05_1", "params":{"x":40, "y":0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"gr05_2", "params":{"x":30, "y":0,"z":10}},
-
-			{"fonc":"orienterY", "objet":"gr05_3", "params":{"angle":1.57}},
-			{"fonc":"placerXYZ", "objet":"gr05_3", "params":{"x":5, "y":0,"z":17.5}},
-
-			{"fonc":"orienterY", "objet":"gr05_4", "params":{"angle":1.57}},
-			{"fonc":"placerXYZ", "objet":"gr05_4", "params":{"x":15, "y":0,"z":17.5}},
-
-			{"fonc":"placerXYZ", "objet":"gr06", "params":{"x":-5, "y":0,"z":20}},
-			{"fonc":"orienterY", "objet":"gr06", "params":{"angle":1.57}},
-
-			{"fonc":"placerXYZ", "objet":"gr07", "params":{"x":12.5, "y":4,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"sol", "params":{"x":0, "y":-0.01,"z":0}},
-			{"fonc":"placerXYZ", "objet":"solMus", "params":{"x":20, "y":0,"z":20}},
-			{"fonc":"placerXYZ", "objet":"garden1", "params":{"x":11.5, "y":0,"z":-10}},
-			{"fonc":"placerXYZ", "objet":"garden2", "params":{"x":28.5, "y":0,"z":-10}},
-			{"fonc":"placerXYZ", "objet":"tapis", "params":{"x":20, "y":0.001,"z":-10}},
-
-			{"fonc":"placerXYZ", "objet":"flowerGrp", "params":{"x":0.75, "y":0.002,"z":0}},
-			{"fonc":"placerXYZ", "objet":"flowerGrp2", "params":{"x":17.5, "y":0.002,"z":0}},
-
-			{"fonc":"placerXYZ", "objet":"flowersGround", "params":{"x":14, "y":0.002,"z":-1}},
-			{"fonc":"placerXYZ", "objet":"flowersGround2", "params":{"x":8, "y":0.002,"z":-1}},
-			{"fonc":"placerXYZ", "objet":"flowersGround3", "params":{"x":14, "y":0.002,"z":-14}},
-			{"fonc":"placerXYZ", "objet":"flowersGround4", "params":{"x":8, "y":0.002,"z":-14}},
-
-			{"fonc":"placerXYZ", "objet":"flowersGround_1", "params":{"x":14, "y":0.002,"z":-1}},
-			{"fonc":"placerXYZ", "objet":"flowersGround2_1", "params":{"x":8, "y":0.002,"z":-1}},
-			{"fonc":"placerXYZ", "objet":"flowersGround3_1", "params":{"x":14, "y":0.002,"z":-14}},
-			{"fonc":"placerXYZ", "objet":"flowersGround4_1", "params":{"x":8, "y":0.002,"z":-14}},
-
-			{"fonc":"placerXYZ", "objet":"gr_escalier", "params":{"x":40, "y":0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"poster01", "params":{"x":2.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"poster02", "params":{"x":-2.5, "y":1.5,"z":0.15}},
-
-			{"fonc":"placerXYZ", "objet":"poster03", "params":{"x":2.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"poster04", "params":{"x":-2.5, "y":1.5,"z":0.15}},
-
-			{"fonc":"placerXYZ", "objet":"poster05", "params":{"x":-4.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"poster06", "params":{"x":-0.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"poster07", "params":{"x":4.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"poster08", "params":{"x":0.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"pays1", "params":{"x":-5.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"pays2", "params":{"x":5.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"pays3", "params":{"x":0.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"pays4", "params":{"x":0.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"hannibal", "params":{"x":2.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"romains", "params":{"x":-2.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint1", "params":{"x":-5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint2", "params":{"x":-1.66, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint3", "params":{"x":1.67, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint4", "params":{"x":5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint5", "params":{"x":-1.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint6", "params":{"x":1.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint7", "params":{"x":-1.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint8", "params":{"x":1.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint9", "params":{"x":-1.5, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint10", "params":{"x":1.5, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint11", "params":{"x":0, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint12", "params":{"x":0, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"peint13", "params":{"x":0, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint14", "params":{"x":0, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint15", "params":{"x":0, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"peint16", "params":{"x":0, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"up_poster01", "params":{"x":0, "y":0.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"up_poster02", "params":{"x":0, "y":0.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"up_poster03", "params":{"x":5, "y":0.8,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"up_poster04", "params":{"x":2, "y":0.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"up_poster05", "params":{"x":1, "y":0.5,"z":0.2}},
-
-		{"fonc":"placerXYZ", "objet":"picasso1", "params":{"x":-4, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"picasso2", "params":{"x":0, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"picasso4", "params":{"x":4, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"guernica1", "params":{"x":-4, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"tunisie", "params":{"x":4, "y":1.5,"z":0.2}},
-			{"fonc":"placerXYZ", "objet":"16century", "params":{"x":0, "y":1.5,"z":0.2}},
-
-			{"fonc":"placerXYZ", "objet":"cloison03", "params":{"x":0.0, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison04", "params":{"x":-8.5, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison05", "params":{"x":8.5, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison06", "params":{"x":0, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison07", "params":{"x":-7.5, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison08", "params":{"x":7.5, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison09", "params":{"x":0, "y":3.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison10", "params":{"x":-7.5, "y":0.0,"z":10}},
-			{"fonc":"orienterY", "objet":"cloison10", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"cloison11", "params":{"x":7.5, "y":0.0,"z":10}},
-			{"fonc":"orienterY", "objet":"cloison11", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"cloison12", "params":{"x":-10, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison13", "params":{"x":-7, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison14", "params":{"x":-13, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison12_1", "params":{"x":-10, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison13_1", "params":{"x":-7, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison14_1", "params":{"x":-13, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison12_2", "params":{"x":-10, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison13_2", "params":{"x":-7, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison14_2", "params":{"x":-13, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison12_3", "params":{"x":-10, "y":3.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison13_3", "params":{"x":-14.5, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison14_3", "params":{"x":-5.5, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison13_3o", "params":{"x":-14.5, "y":0.0,"z":9.8}},
-			{"fonc":"orienterY", "objet":"cloison13_3o", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"cloison14_3o", "params":{"x":-5.5, "y":0.0,"z":9.8}},
-			{"fonc":"orienterY", "objet":"cloison14_3o", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"cloison12_4", "params":{"x":-10, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison13_4", "params":{"x":-14.5, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison14_4", "params":{"x":-5.5, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloison13_4o", "params":{"x":-14.5, "y":0.0,"z":10}},
-			{"fonc":"orienterY", "objet":"cloison13_4o", "params":{"angle":3.14}},
-
-			{"fonc":"placerXYZ", "objet":"cloison14_4o", "params":{"x":-5.5, "y":0.0,"z":10}},
-			{"fonc":"orienterY", "objet":"cloison14_4o", "params":{"angle":3.14}},
-
-
-			{"fonc":"placerXYZ", "objet":"cloison15", "params":{"x":0, "y":3.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison16", "params":{"x":-7.5, "y":0.0,"z":10}},
-			{"fonc":"placerXYZ", "objet":"cloison17", "params":{"x":7.5, "y":0.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"upstairs", "params":{"x":7.5, "y":0.0,"z":10}},
-			{"fonc":"orienterX", "objet":"upstairs", "params":{"angle":1.57}},
-
-			{"fonc":"placerXYZ", "objet":"cloisupp01", "params":{"x":-7.5, "y":15.0,"z":17.5}},
-			{"fonc":"orienterY", "objet":"cloisupp01", "params":{"angle":1.57}},
-
-			{"fonc":"placerXYZ", "objet":"cloisupp02", "params":{"x":6.3, "y":5.0,"z":10}},
-
-			{"fonc":"placerXYZ", "objet":"cloisupp03", "params":{"x":7.5, "y":0.0,"z":25}},
-
-			{"fonc":"placerXYZ", "objet":"cloisupp04", "params":{"x":22.5, "y":0.0,"z":17.5}},
-			{"fonc":"orienterY", "objet":"cloisupp04", "params":{"angle":1.57}},
-
-			{"fonc":"placerXYZ", "objet":"escalier_1", "params":{"x":-6.1, "y":0.0,"z":9.8}},
-			{"fonc":"placerXYZ", "objet":"escalier_2", "params":{"x":-6.1, "y":0.0,"z":9.1}},
-			{"fonc":"placerXYZ", "objet":"escalier_3", "params":{"x":-6.1, "y":0.0,"z":8.4}},
-			{"fonc":"placerXYZ", "objet":"escalier_4", "params":{"x":-6.1, "y":0.0,"z":7.7}},
-			{"fonc":"placerXYZ", "objet":"escalier_5", "params":{"x":-6.1, "y":0.0,"z":7}},
-			{"fonc":"placerXYZ", "objet":"escalier_6", "params":{"x":-6.1, "y":0.0,"z":6.3}},
-			{"fonc":"placerXYZ", "objet":"escalier_7", "params":{"x":-6.1, "y":0.0,"z":5.6}},
-			{"fonc":"placerXYZ", "objet":"escalier_8", "params":{"x":-6.1, "y":0.0,"z":4.9}}
-
-
-		    ],
-	"relations" : [
-			{"rel":"parentDe","sujet":"scene","objet":"soleil"},
-			{"rel":"parentDe","sujet":"scene","objet":"directLight"},
-
-			{"rel":"parentDe","sujet":"gr05_1","objet":"ampoule01"},
-			{"rel":"parentDe","sujet":"gr05_2","objet":"ampoule02"},
-			{"rel":"parentDe","sujet":"gr05","objet":"ampoule03"},
-			{"rel":"parentDe","sujet":"gr02","objet":"ampoule04"},
-			{"rel":"parentDe","sujet":"gr02","objet":"ampoule05"},
-
-
-
-			{"rel":"parentDe","sujet":"scene","objet":"gr01"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr02"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr03"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr04"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr05"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr05_1"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr05_2"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr05_3"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr05_4"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr06"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr07"},
-			{"rel":"parentDe","sujet":"scene","objet":"sol"},
-			{"rel":"parentDe","sujet":"scene","objet":"solMus"},
-			{"rel":"parentDe","sujet":"scene","objet":"garden1"},
-			{"rel":"parentDe","sujet":"scene","objet":"garden2"},
-			{"rel":"parentDe","sujet":"scene","objet":"tapis"},
-			{"rel":"parentDe","sujet":"scene","objet":"gr_escalier"},
-
-			{"rel":"parentDe","sujet":"scene","objet":"flowerGrp"},
-			{"rel":"parentDe","sujet":"flowerGrp","objet":"flowersGround"},
-			{"rel":"parentDe","sujet":"flowerGrp","objet":"flowersGround2"},
-			{"rel":"parentDe","sujet":"flowerGrp","objet":"flowersGround3"},
-			{"rel":"parentDe","sujet":"flowerGrp","objet":"flowersGround4"},
-
-			{"rel":"parentDe","sujet":"scene","objet":"flowerGrp2"},
-			{"rel":"parentDe","sujet":"flowerGrp2","objet":"flowersGround_1"},
-			{"rel":"parentDe","sujet":"flowerGrp2","objet":"flowersGround2_1"},
-			{"rel":"parentDe","sujet":"flowerGrp2","objet":"flowersGround3_1"},
-			{"rel":"parentDe","sujet":"flowerGrp2","objet":"flowersGround4_1"},
-
-			{"rel":"parentDe","sujet":"gr07","objet":"upstairs"},
-			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp01"},
-			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp02"},
-			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp03"},
-			{"rel":"parentDe","sujet":"gr07","objet":"cloisupp04"},
-
-			{"rel":"parentDe","sujet":"gr02","objet":"cloison03"},
-			{"rel":"parentDe","sujet":"gr02","objet":"cloison04"},
-			{"rel":"parentDe","sujet":"gr02","objet":"cloison05"},
-
-			{"rel":"parentDe","sujet":"gr03","objet":"cloison06"},
-			{"rel":"parentDe","sujet":"gr03","objet":"cloison07"},
-			{"rel":"parentDe","sujet":"gr03","objet":"cloison08"},
-
-			{"rel":"parentDe","sujet":"gr04","objet":"cloison09"},
-			{"rel":"parentDe","sujet":"gr04","objet":"cloison10"},
-			{"rel":"parentDe","sujet":"gr04","objet":"cloison11"},
-
-			{"rel":"parentDe","sujet":"gr05","objet":"cloison12"},
-			{"rel":"parentDe","sujet":"gr05","objet":"cloison13"},
-			{"rel":"parentDe","sujet":"gr05","objet":"cloison14"},
-
-			{"rel":"parentDe","sujet":"gr05_1","objet":"cloison12_1"},
-			{"rel":"parentDe","sujet":"gr05_1","objet":"cloison13_1"},
-			{"rel":"parentDe","sujet":"gr05_1","objet":"cloison14_1"},
-
-
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_1"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_2"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_3"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_4"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_5"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_6"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_7"},
-			{"rel":"parentDe","sujet":"gr_escalier","objet":"escalier_8"},
-
-
-			{"rel":"parentDe","sujet":"gr05_2","objet":"cloison12_2"},
-			{"rel":"parentDe","sujet":"gr05_2","objet":"cloison13_2"},
-			{"rel":"parentDe","sujet":"gr05_2","objet":"cloison14_2"},
-
-			{"rel":"parentDe","sujet":"gr05_3","objet":"cloison12_3"},
-			{"rel":"parentDe","sujet":"gr05_3","objet":"cloison13_3"},
-			{"rel":"parentDe","sujet":"gr05_3","objet":"cloison14_3"},
-			{"rel":"parentDe","sujet":"gr05_3","objet":"cloison13_3o"},
-			{"rel":"parentDe","sujet":"gr05_3","objet":"cloison14_3o"},
-
-			{"rel":"parentDe","sujet":"gr05_4","objet":"cloison12_4"},
-			{"rel":"parentDe","sujet":"gr05_4","objet":"cloison13_4"},
-			{"rel":"parentDe","sujet":"gr05_4","objet":"cloison14_4"},
-			{"rel":"parentDe","sujet":"gr05_4","objet":"cloison13_4o"},
-			{"rel":"parentDe","sujet":"gr05_4","objet":"cloison14_4o"},
-
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison15"},
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison16"},
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison17"},
-
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison15"},
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison16"},
-			{"rel":"parentDe","sujet":"gr06","objet":"cloison17"},
-
-
-
-			{"rel":"parentDe","sujet":"cloison04","objet":"poster01"},
-			{"rel":"parentDe","sujet":"cloison04","objet":"poster02"},
-
-			{"rel":"parentDe","sujet":"cloison05","objet":"poster03"},
-			{"rel":"parentDe","sujet":"cloison05","objet":"poster04"},
-
-			{"rel":"parentDe","sujet":"cloison07","objet":"poster05"},
-			{"rel":"parentDe","sujet":"cloison07","objet":"poster06"},
-			{"rel":"parentDe","sujet":"cloison07","objet":"pays2"},
-
-			{"rel":"parentDe","sujet":"cloison08","objet":"poster07"},
-			{"rel":"parentDe","sujet":"cloison08","objet":"poster08"},
-			{"rel":"parentDe","sujet":"cloison08","objet":"pays1"},
-
-			{"rel":"parentDe","sujet":"cloison04","objet":"poster09"},
-			{"rel":"parentDe","sujet":"cloison04","objet":"poster10"},
-
-			{"rel":"parentDe","sujet":"cloison16","objet":"peint1"},
-			{"rel":"parentDe","sujet":"cloison16","objet":"peint2"},
-			{"rel":"parentDe","sujet":"cloison16","objet":"peint3"},
-			{"rel":"parentDe","sujet":"cloison16","objet":"peint4"},
-
-			{"rel":"parentDe","sujet":"cloison17","objet":"romains"},
-			{"rel":"parentDe","sujet":"cloison17","objet":"hannibal"},
-
-			{"rel":"parentDe","sujet":"cloison13_3","objet":"peint5"},
-			{"rel":"parentDe","sujet":"cloison13_3","objet":"peint6"},
-			{"rel":"parentDe","sujet":"cloison13_3o","objet":"peint11"},
-
-			{"rel":"parentDe","sujet":"cloison14_3o","objet":"peint12"},
-			{"rel":"parentDe","sujet":"cloison14_3","objet":"peint7"},
-			{"rel":"parentDe","sujet":"cloison14_3","objet":"peint8"},
-
-			{"rel":"parentDe","sujet":"cloison13_4","objet":"peint9"},
-			{"rel":"parentDe","sujet":"cloison13_4","objet":"peint10"},
-			{"rel":"parentDe","sujet":"cloison13_4o","objet":"peint16"},
-
-			{"rel":"parentDe","sujet":"cloison14_4o","objet":"peint13"},
-			{"rel":"parentDe","sujet":"cloison14_4","objet":"peint14"},
-			{"rel":"parentDe","sujet":"cloison14_4","objet":"peint15"},
-
-			{"rel":"parentDe","sujet":"cloison10","objet":"picasso1"},
-			{"rel":"parentDe","sujet":"cloison10","objet":"picasso2"},
-			{"rel":"parentDe","sujet":"cloison10","objet":"picasso4"},
-
-			{"rel":"parentDe","sujet":"cloison11","objet":"guernica1"},
-			{"rel":"parentDe","sujet":"cloison11","objet":"tunisie"},
-			{"rel":"parentDe","sujet":"cloison11","objet":"16century"},
-
-
-			{"rel":"parentDe","sujet":"cloi","objet":"guernica1"},
-			{"rel":"parentDe","sujet":"cloison11","objet":"tunisie"},
-			{"rel":"parentDe","sujet":"cloison11","objet":"16century"},
-
-			{"rel":"parentDe","sujet":"cloisupp01","objet":"up_poster01"},
-			{"rel":"parentDe","sujet":"cloisupp02","objet":"up_poster02"},
-			{"rel":"parentDe","sujet":"cloisupp03","objet":"up_poster03"},
-			{"rel":"parentDe","sujet":"cloisupp04","objet":"up_poster04"}
+	"objets": [
+
+
+		{
+			"type": "soleil",
+			"nom": "soleil",
+			"params": {}
+		}, {
+			"type": "lambert",
+			"nom": "materiauBleu",
+			"params": {
+				"couleur": "bleu"
+			}
+		},
+		{"type":"groupe",  "nom":"grRDCSalles","params":{}},
+		{
+			"type": "groupe",
+			"nom": "grRDCSallesGd",
+			"params": {}
+		},
+		{
+			"type": "ampoule",
+			"nom": "ampoule01",
+			"params": {
+				"couleur": "bleu",
+				"intensite": 1.0,
+				"portee": 45.0,
+				"attenuation": 2.0
+			}
+		},
+		{
+			"type": "ampoule",
+			"nom": "ampoule02",
+			"params": {
+				"couleur": "bleu",
+				"intensite": 1.0,
+				"portee": 45.0,
+				"attenuation": 2.0
+			}
+		},
+		{
+			"type": "ampoule",
+			"nom": "ampoule03",
+			"params": {
+				"couleur": "bleu",
+				"intensite": 1.0,
+				"portee": 45.0,
+				"attenuation": 2.0
+			}
+		},
+
+		{
+			"type": "ampoule",
+			"nom": "ampoule04",
+			"params": {
+				"couleur": "bleu",
+				"intensite": 1.0,
+				"portee": 5.0,
+				"attenuation": 2.0
+			}
+		},
+		{
+			"type": "ampoule",
+			"nom": "ampoule05",
+			"params": {
+				"couleur": "bleu",
+				"intensite": 1.0,
+				"portee": 5.0,
+				"attenuation": 2.0
+			}
+		},
+
+		{
+			"type": "light",
+			"nom": "directLight",
+			"params": {
+				"couleur": "blanche",
+				"intensite": 1
+			}
+		},
+
+		{
+			"type": "lambertTexture",
+			"nom": "textureDante",
+			"params": {
+				"image": "assets/textures/murs/iron2.jpg",
+				"couleur": "gris",
+				"nx": 2,
+				"ny": 2
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "textureDante2",
+			"params": {
+				"image": "assets/textures/murs/greybriks.jpg",
+				"couleur": "gris",
+				"nx": 1,
+				"ny": 1
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "textureDante3",
+			"params": {
+				"image": "assets/textures/murs/japan009.jpg",
+				"couleur": "gris",
+				"nx": 3,
+				"ny": 3
+			}
+		},
+
+		{
+			"type": "lambertTexture",
+			"nom": "textureDore",
+			"params": {
+				"image": "assets/textures/murs/gold.jpg",
+				"nx": 4,
+				"ny": 4
+			}
+		},
+
+		{
+			"type": "lambertTexture",
+			"nom": "textureSol",
+			"params": {
+				"image": "assets/textures/sols_plafonds/ground_floor.jpg",
+				"couleur": "gris",
+				"nx": 50,
+				"ny": 50
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "textureSolMus",
+			"params": {
+				"image": "assets/textures/sols_plafonds/iron.jpg",
+				"couleur": "gris",
+				"nx": 3,
+				"ny": 3
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "textureGarden",
+			"params": {
+				"image": "assets/textures/sols_plafonds/Grass.jpg",
+				"couleur": "gris",
+				"nx": 10,
+				"ny": 10
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "textureGarden",
+			"params": {
+				"image": "assets/textures/sols_plafonds/Grass.jpg",
+				"couleur": "gris",
+				"nx": 10,
+				"ny": 10
+			}
+		},
+		{
+			"type": "lambertTexture",
+			"nom": "tapisTexture",
+			"params": {
+				"image": "assets/textures/sols_plafonds/tapis.jpeg",
+				"couleur": "gris",
+				"nx": 50,
+				"ny": 50
+			}
+		},
+
+		{
+			"type": "lambertTexture",
+			"nom": "textureMur1",
+			"params": {
+				"image": "assets/textures/murs/dante.jpg",
+				"couleur": "gris",
+				"nx": 50,
+				"ny": 50
+			}
+		},
+
+		{
+			"type": "lambertTexture",
+			"nom": "flowerTexture",
+			"params": {
+				"image": "assets/textures/sols_plafonds/yellFlows.jpg",
+				"couleur": "gris",
+				"nx": 5,
+				"ny": 5
+			}
+		},
+
+
+		{
+			"type": "groupe",
+			"nom": "gr01",
+			"params": {}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr02",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr03",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr04",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr05",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr05_1",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr05_2",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr05_3",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr05_4",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr06",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr07",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "flowerGrp",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "flowerGrp2",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+		{
+			"type": "groupe",
+			"nom": "gr_escalier",
+			"params": {
+				"materiau": "textureMur"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "sol",
+			"params": {
+				"largeur": 100.0,
+				"profondeur": 100.0,
+				"materiau": "textureSol"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "solMus",
+			"params": {
+				"largeur": 30.0,
+				"profondeur": 30.0,
+				"materiau": "textureSolMus"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "upstairs",
+			"params": {
+				"largeur": 30.0,
+				"hauteur": 15.0,
+				"epaisseur": 0.2,
+				"materiau": "textureSolMus"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "garden1",
+			"params": {
+				"largeur": 13.0,
+				"profondeur": 30.0,
+				"materiau": "textureGarden"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "garden2",
+			"params": {
+				"largeur": 13.0,
+				"profondeur": 30.0,
+				"materiau": "textureGarden"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "tapis",
+			"params": {
+				"largeur": 3.0,
+				"profondeur": 30.0,
+				"materiau": "tapisTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround2",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround3",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround4",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround_1",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround2_1",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround3_1",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+
+		{
+			"type": "sol",
+			"nom": "flowersGround4_1",
+			"params": {
+				"largeur": 4.0,
+				"profondeur": 8.0,
+				"materiau": "flowerTexture"
+			}
+		},
+		{
+			"type": "obj",
+			"nom": "statue",
+			"params": {
+				"url": "assets/statue/",
+				"fichier": "statue"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "poster01",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/france.jpeg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "poster02",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/img1.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "poster03",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/img2.jpg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "poster04",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/img3.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "poster05",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/img4.jpg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "poster06",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/monalisa.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "poster07",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/cuisine.jpg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "poster08",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/coffre-charbon.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "pays1",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/tab1.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "pays2",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/tab2.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "pays3",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/tab3.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "pays4",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/tab4.jpeg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "hannibal",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/hannibal.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "romains",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/romains.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint1",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint1.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint2",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint2.jpg"
+			}
+		},
+
+
+		{
+			"type": "poster",
+			"nom": "peint3",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint3.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint4",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint4.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint5",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint5.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint6",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint6.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint7",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint7.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint8",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint8.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint9",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint9.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint10",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint10.jpg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "peint11",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint11.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint12",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint12.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint13",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint13.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint14",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint14.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "peint15",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint15.jpg"
+			}
+		},
+		{
+			"type": "poster",
+			"nom": "peint16",
+			"params": {
+				"largeur": 4.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/peint16.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "tunisie",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/tunisie.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "picasso1",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/picasso1.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "picasso2",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/picasso2.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "guernica1",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/guernica1.jpeg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "picasso4",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/picasso4.jpeg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "egypt",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/egypt.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "16century",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/16century.jpg"
+			}
+		},
+
+		{
+			"type": "poster",
+			"nom": "poster08",
+			"params": {
+				"largeur": 2.0,
+				"hauteur": 2.0,
+				"epaisseur": 0.5,
+				"url": "assets/posters/trevarez/coffre-charbon.jpg"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "podium01",
+			"params": {
+				"largeur": 2.3,
+				"hauteur": 0.8,
+				"epaisseur": 6.3,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison03",
+			"params": {
+				"largeur": 30.0,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison04",
+			"params": {
+				"largeur": 13,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison05",
+			"params": {
+				"largeur": 13,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+
+
+		{
+			"type": "cloison",
+			"nom": "cloison06",
+			"params": {
+				"largeur": 30,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison07",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison08",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison09",
+			"params": {
+				"largeur": 30,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison10",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison11",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison12",
+			"params": {
+				"largeur": 10,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison13",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison14",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison12_1",
+			"params": {
+				"largeur": 10,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison13_1",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "escalier_1",
+			"params": {
+				"largeur": 2,
+				"hauteur": 4,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_2",
+			"params": {
+				"largeur": 2,
+				"hauteur": 3.5,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_3",
+			"params": {
+				"largeur": 2,
+				"hauteur": 3.0,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_4",
+			"params": {
+				"largeur": 2,
+				"hauteur": 2.5,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_5",
+			"params": {
+				"largeur": 2,
+				"hauteur": 2.0,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_6",
+			"params": {
+				"largeur": 2,
+				"hauteur": 1.5,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_7",
+			"params": {
+				"largeur": 2,
+				"hauteur": 1,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "escalier_8",
+			"params": {
+				"largeur": 2,
+				"hauteur": 0.5,
+				"epaisseur": 1,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison14_1",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison12_2",
+
+			"params": {
+				"largeur": 10,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison13_2",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison14_2",
+			"params": {
+				"largeur": 4,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison12_3",
+			"params": {
+				"largeur": 15,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison13_3",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison14_3",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison13_3o",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison14_3o",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison12_4",
+			"params": {
+				"largeur": 15,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison13_4",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison14_4",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison13_4o",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison14_4o",
+			"params": {
+				"largeur": 6,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante2"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison15",
+			"params": {
+				"largeur": 30,
+				"hauteur": 1.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDore"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "cloison16",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "cloison17",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante"
+			}
+		},
+
+		{
+			"type": "cloison",
+			"nom": "up_clois01",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante3"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "up_clois02",
+			"params": {
+				"largeur": 27.5,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante3"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "up_clois03",
+			"params": {
+				"largeur": 30,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante3"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "up_clois04",
+			"params": {
+				"largeur": 15,
+				"hauteur": 3.0,
+				"epaisseur": 0.2,
+				"materiau": "textureDante3"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1a",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1b",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1c",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2a",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2b",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2c",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+
+		{
+			"type": "audio",
+			"nom": "son1",
+			"params": {
+				"url": "assets/sounds/oiseaux/piste_10.mp3",
+				"loop": true
+			}
+		}
+
+	],
+
+	"actions": [
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1a",
+			"params": {
+				"x": -20.5,
+				"y": 1,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1b",
+			"params": {
+				"x": -19.5,
+				"y": 1,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1c",
+			"params": {
+				"x": -20,
+				"y": 2,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2a",
+			"params": {
+				"x": -20,
+				"y": 1,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2b",
+			"params": {
+				"x": -20,
+				"y": 2.2,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2c",
+			"params": {
+				"x": -20,
+				"y": 3.1,
+				"z": 0
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "grRDCSallesGd",
+			"params": {
+				"x": 0,
+				"y": 0,
+				"z": -7.5
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "podium01",
+			"params": {
+				"angle": 0.785398163
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "podium01",
+			"params": {
+				"x": -20,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr01",
+			"params": {
+				"x": -2,
+				"y": -0.5,
+				"z": 3
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr02",
+			"params": {
+				"x": 20,
+				"y": 0,
+				"z": -5
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr03",
+			"params": {
+				"x": 20,
+				"y": 0,
+				"z": 45
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "gr03",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr04",
+			"params": {
+				"x": 25,
+				"y": 0,
+				"z": 20
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "gr04",
+			"params": {
+				"angle": 1.57
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr05",
+			"params": {
+				"x": 20,
+				"y": 0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr05_1",
+			"params": {
+				"x": 40,
+				"y": 0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr05_2",
+			"params": {
+				"x": 30,
+				"y": 0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "orienterY",
+			"objet": "gr05_3",
+			"params": {
+				"angle": 1.57
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr05_3",
+			"params": {
+				"x": 5,
+				"y": 0,
+				"z": 17.5
+			}
+		},
+
+		{
+			"fonc": "orienterY",
+			"objet": "gr05_4",
+			"params": {
+				"angle": 1.57
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr05_4",
+			"params": {
+				"x": 15,
+				"y": 0,
+				"z": 17.5
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr06",
+			"params": {
+				"x": -5,
+				"y": 0,
+				"z": 20
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "gr06",
+			"params": {
+				"angle": 1.57
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr07",
+			"params": {
+				"x": 12.5,
+				"y": 4,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "sol",
+			"params": {
+				"x": 0,
+				"y": -0.01,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "solMus",
+			"params": {
+				"x": 20,
+				"y": 0,
+				"z": 20
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "garden1",
+			"params": {
+				"x": 11.5,
+				"y": 0,
+				"z": -10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "garden2",
+			"params": {
+				"x": 28.5,
+				"y": 0,
+				"z": -10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "tapis",
+			"params": {
+				"x": 20,
+				"y": 0.001,
+				"z": -10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowerGrp",
+			"params": {
+				"x": 0.75,
+				"y": 0.002,
+				"z": 0
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowerGrp2",
+			"params": {
+				"x": 17.5,
+				"y": 0.002,
+				"z": 0
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround",
+			"params": {
+				"x": 14,
+				"y": 0.002,
+				"z": -1
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround2",
+			"params": {
+				"x": 8,
+				"y": 0.002,
+				"z": -1
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround3",
+			"params": {
+				"x": 14,
+				"y": 0.002,
+				"z": -14
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround4",
+			"params": {
+				"x": 8,
+				"y": 0.002,
+				"z": -14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround_1",
+			"params": {
+				"x": 14,
+				"y": 0.002,
+				"z": -1
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround2_1",
+			"params": {
+				"x": 8,
+				"y": 0.002,
+				"z": -1
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround3_1",
+			"params": {
+				"x": 14,
+				"y": 0.002,
+				"z": -14
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "flowersGround4_1",
+			"params": {
+				"x": 8,
+				"y": 0.002,
+				"z": -14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "gr_escalier",
+			"params": {
+				"x": 40,
+				"y": 0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster01",
+			"params": {
+				"x": 2.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster02",
+			"params": {
+				"x": -2.5,
+				"y": 1.5,
+				"z": 0.15
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster03",
+			"params": {
+				"x": 2.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster04",
+			"params": {
+				"x": -2.5,
+				"y": 1.5,
+				"z": 0.15
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster05",
+			"params": {
+				"x": -4.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster06",
+			"params": {
+				"x": -0.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster07",
+			"params": {
+				"x": 4.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "poster08",
+			"params": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "pays1",
+			"params": {
+				"x": -5.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "pays2",
+			"params": {
+				"x": 5.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "pays3",
+			"params": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "pays4",
+			"params": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "hannibal",
+			"params": {
+				"x": 2.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "romains",
+			"params": {
+				"x": -2.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint1",
+			"params": {
+				"x": -5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint2",
+			"params": {
+				"x": -1.66,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint3",
+			"params": {
+				"x": 1.67,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint4",
+			"params": {
+				"x": 5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint5",
+			"params": {
+				"x": -1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint6",
+			"params": {
+				"x": 1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint7",
+			"params": {
+				"x": -1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint8",
+			"params": {
+				"x": 1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint9",
+			"params": {
+				"x": -1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint10",
+			"params": {
+				"x": 1.5,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint11",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint12",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint13",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint14",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint15",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "peint16",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "picasso1",
+			"params": {
+				"x": -4,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "picasso2",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "picasso4",
+			"params": {
+				"x": 4,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "guernica1",
+			"params": {
+				"x": -4,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "tunisie",
+			"params": {
+				"x": 4,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "16century",
+			"params": {
+				"x": 0,
+				"y": 1.5,
+				"z": 0.2
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison03",
+			"params": {
+				"x": 0.0,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison04",
+			"params": {
+				"x": -8.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison05",
+			"params": {
+				"x": 8.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison06",
+			"params": {
+				"x": 0,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison07",
+			"params": {
+				"x": -7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison08",
+			"params": {
+				"x": 7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison09",
+			"params": {
+				"x": 0,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison10",
+			"params": {
+				"x": -7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison10",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison11",
+			"params": {
+				"x": 7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison11",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison12",
+			"params": {
+				"x": -10,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13",
+			"params": {
+				"x": -7,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14",
+			"params": {
+				"x": -13,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison12_1",
+			"params": {
+				"x": -10,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_1",
+			"params": {
+				"x": -7,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_1",
+			"params": {
+				"x": -13,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison12_2",
+			"params": {
+				"x": -10,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_2",
+			"params": {
+				"x": -7,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_2",
+			"params": {
+				"x": -13,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison12_3",
+			"params": {
+				"x": -10,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_3",
+			"params": {
+				"x": -14.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_3",
+			"params": {
+				"x": -5.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_3o",
+			"params": {
+				"x": -14.5,
+				"y": 0.0,
+				"z": 9.8
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison13_3o",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_3o",
+			"params": {
+				"x": -5.5,
+				"y": 0.0,
+				"z": 9.8
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison14_3o",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison12_4",
+			"params": {
+				"x": -10,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_4",
+			"params": {
+				"x": -14.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_4",
+			"params": {
+				"x": -5.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison13_4o",
+			"params": {
+				"x": -14.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison13_4o",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison14_4o",
+			"params": {
+				"x": -5.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "cloison14_4o",
+			"params": {
+				"angle": 3.14
+			}
+		},
+
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison15",
+			"params": {
+				"x": 0,
+				"y": 3.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison16",
+			"params": {
+				"x": -7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "cloison17",
+			"params": {
+				"x": 7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "upstairs",
+			"params": {
+				"x": 7.5,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+		{
+			"fonc": "orienterX",
+			"objet": "upstairs",
+			"params": {
+				"angle": 1.57
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "up_clois01",
+			"params": {
+				"x": -7.5,
+				"y": 0.0,
+				"z": 17.5
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "up_clois01",
+			"params": {
+				"angle": 1.57
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "up_clois02",
+			"params": {
+				"x": 6.3,
+				"y": 0.0,
+				"z": 10
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "up_clois03",
+			"params": {
+				"x": 7.5,
+				"y": 0.0,
+				"z": 25
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "up_clois04",
+			"params": {
+				"x": 22.5,
+				"y": 0.0,
+				"z": 17.5
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "up_clois04",
+			"params": {
+				"angle": 1.57
+			}
+		},
+
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_1",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 9.8
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_2",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 9.1
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_3",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 8.4
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_4",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 7.7
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_5",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 7
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_6",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 6.3
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_7",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 5.6
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "escalier_8",
+			"params": {
+				"x": -6.1,
+				"y": 0.0,
+				"z": 4.9
+			}
+		}
+
+
+	],
+	"relations": [
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1a"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1b"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1c"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2a"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2b"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2c"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "soleil"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "directLight"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_1",
+			"objet": "ampoule01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_2",
+			"objet": "ampoule02"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05",
+			"objet": "ampoule03"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr02",
+			"objet": "ampoule04"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr02",
+			"objet": "ampoule05"
+		},
+
+
+
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr02"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr03"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr04"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr05"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr05_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr05_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr05_3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr05_4"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr06"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr07"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "sol"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "solMus"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "garden1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "garden2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "tapis"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "gr_escalier"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "flowerGrp"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp",
+			"objet": "flowersGround"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp",
+			"objet": "flowersGround2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp",
+			"objet": "flowersGround3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp",
+			"objet": "flowersGround4"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "scene",
+			"objet": "flowerGrp2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp2",
+			"objet": "flowersGround_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp2",
+			"objet": "flowersGround2_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp2",
+			"objet": "flowersGround3_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "flowerGrp2",
+			"objet": "flowersGround4_1"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr07",
+			"objet": "upstairs"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr07",
+			"objet": "up_clois01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr07",
+			"objet": "up_clois02"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr07",
+			"objet": "up_clois03"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr07",
+			"objet": "up_clois04"
+		},
+
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr02",
+			"objet": "cloison03"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr02",
+			"objet": "cloison04"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr02",
+			"objet": "cloison05"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr03",
+			"objet": "cloison06"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr03",
+			"objet": "cloison07"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr03",
+			"objet": "cloison08"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr04",
+			"objet": "cloison09"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr04",
+			"objet": "cloison10"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr04",
+			"objet": "cloison11"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05",
+			"objet": "cloison12"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05",
+			"objet": "cloison13"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05",
+			"objet": "cloison14"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_1",
+			"objet": "cloison12_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_1",
+			"objet": "cloison13_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_1",
+			"objet": "cloison14_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "statue"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "podium01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_4"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_5"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_6"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_7"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "escalier_8"
+		},
+
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_2",
+			"objet": "cloison12_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_2",
+			"objet": "cloison13_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_2",
+			"objet": "cloison14_2"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_3",
+			"objet": "cloison12_3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_3",
+			"objet": "cloison13_3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_3",
+			"objet": "cloison14_3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_3",
+			"objet": "cloison13_3o"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_3",
+			"objet": "cloison14_3o"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_4",
+			"objet": "cloison12_4"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_4",
+			"objet": "cloison13_4"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_4",
+			"objet": "cloison14_4"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_4",
+			"objet": "cloison13_4o"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr05_4",
+			"objet": "cloison14_4o"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison15"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison16"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison17"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison15"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison16"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr06",
+			"objet": "cloison17"
+		},
+
+
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison04",
+			"objet": "poster01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison04",
+			"objet": "poster02"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison05",
+			"objet": "poster03"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison05",
+			"objet": "poster04"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison07",
+			"objet": "poster05"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison07",
+			"objet": "poster06"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison07",
+			"objet": "pays2"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison08",
+			"objet": "poster07"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison08",
+			"objet": "poster08"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison08",
+			"objet": "pays1"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison04",
+			"objet": "poster09"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison04",
+			"objet": "poster10"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison16",
+			"objet": "peint1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison16",
+			"objet": "peint2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison16",
+			"objet": "peint3"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison16",
+			"objet": "peint4"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison17",
+			"objet": "romains"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison17",
+			"objet": "hannibal"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_3",
+			"objet": "peint5"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_3",
+			"objet": "peint6"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_3o",
+			"objet": "peint11"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_3o",
+			"objet": "peint12"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_3",
+			"objet": "peint7"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_3",
+			"objet": "peint8"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_4",
+			"objet": "peint9"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_4",
+			"objet": "peint10"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison13_4o",
+			"objet": "peint16"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_4o",
+			"objet": "peint13"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_4",
+			"objet": "peint14"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison14_4",
+			"objet": "peint15"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison10",
+			"objet": "picasso1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison10",
+			"objet": "picasso2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison10",
+			"objet": "picasso4"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloison11",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison11",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison11",
+			"objet": "16century"
+		},
+
+
+
+		{
+			"rel": "parentDe",
+			"sujet": "cloi",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison11",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "cloison11",
+			"objet": "16century"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois01",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois01",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois01",
+			"objet": "16century"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois02",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois02",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois02",
+			"objet": "16century"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois03",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois03",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois03",
+			"objet": "16century"
+		},
+
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois04",
+			"objet": "guernica1"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois04",
+			"objet": "tunisie"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "up_clois04",
+			"objet": "16century"
+		}
 	]
 }
