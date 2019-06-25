@@ -440,6 +440,14 @@
 				"fichier": "statue"
 			}
 		},
+		{
+			"type": "obj",
+			"nom": "statue2",
+			"params": {
+				"url": "assets/statue/",
+				"fichier": "statue"
+			}
+		},
 
 		{
 			"type": "poster",
@@ -448,7 +456,7 @@
 				"largeur": 2.0,
 				"hauteur": 2.0,
 				"epaisseur": 0.5,
-				"url": "assets/posters/france.jpeg"
+				"url": "assets/posters/france.jpg"
 			}
 		},
 		{
@@ -856,6 +864,16 @@
 		{
 			"type": "cloison",
 			"nom": "podium01",
+			"params": {
+				"largeur": 2.3,
+				"hauteur": 0.8,
+				"epaisseur": 6.3,
+				"materiau": "textureDante2"
+			}
+		},
+		{
+			"type": "cloison",
+			"nom": "podium02",
 			"params": {
 				"largeur": 2.3,
 				"hauteur": 0.8,
@@ -1366,6 +1384,60 @@
 				"materiau": "materiauBleu"
 			}
 		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1a_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1b_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture1c_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2a_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2b_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
+		{
+			"type": "sphere",
+			"nom": "sculpture2c_2",
+			"params": {
+				"rayon": 0.5,
+				"subdivisions": 16,
+				"materiau": "materiauBleu"
+			}
+		},
 
 		{
 			"type": "audio",
@@ -1434,6 +1506,60 @@
 				"z": 0
 			}
 		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1a_2",
+			"params": {
+				"x": -20.5,
+				"y": 5.5,
+				"z": 18
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1b_2",
+			"params": {
+				"x": -19.5,
+				"y": 5.5,
+				"z": 18
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture1c_2",
+			"params": {
+				"x": -20,
+				"y": 6.5,
+				"z": 18
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2a_2",
+			"params": {
+				"x": -20,
+				"y": 5.5,
+				"z": 18
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2b_2",
+			"params": {
+				"x": -20,
+				"y": 6.7,
+				"z": 18
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "sculpture2c_2",
+			"params": {
+				"x": -20,
+				"y": 7.6,
+				"z": 18
+			}
+		},
 
 		{
 			"fonc": "placerXYZ",
@@ -1458,6 +1584,22 @@
 				"x": -20,
 				"y": 0,
 				"z": 0
+			}
+		},
+		{
+			"fonc": "orienterY",
+			"objet": "podium02",
+			"params": {
+				"angle": 0.785398163
+			}
+		},
+		{
+			"fonc": "placerXYZ",
+			"objet": "podium02",
+			"params": {
+				"x": -20,
+				"y": 4.2,
+				"z": 18
 			}
 		},
 		{
@@ -2605,6 +2747,36 @@
 		},
 		{
 			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1a_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1b_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture1c_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2a_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2b_2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "sculpture2c_2"
+		},
+		{
+			"rel": "parentDe",
 			"sujet": "scene",
 			"objet": "soleil"
 		},
@@ -2895,6 +3067,16 @@
 			"rel": "parentDe",
 			"sujet": "gr_escalier",
 			"objet": "podium01"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "statue2"
+		},
+		{
+			"rel": "parentDe",
+			"sujet": "gr_escalier",
+			"objet": "podium02"
 		},
 		{
 			"rel": "parentDe",
