@@ -1,3 +1,149 @@
+var materiaux = {};
+var noeuds = {};
+var listeIntersection = [];
+var mire;
+var monde = {}
+monde.entites = {};
+monde.materiaux = {};
+monde.textures = {};
+var spheres = [];
+var game = [];
+var offset_i = -14.5;
+var offset_j = +7.5;
+var visitor;
+var target = null;
+/*  */
+var attendre = false;
+var guide_state = 0;
+var etat_guide = "idle";
+var positionVisite = 0;
+var sph1;
+var mat_guide = creerLambert(0x00ff00);
+var mat2 = creerLambert(0xffff00);
+
+function guideEnerve(){
+
+	guideUtilisateur.rotation.y = guideUtilisateur.rotation.y +2;
+}
+
+
+function positionConforme(){
+	var xguide = guideUtilisateur.position.x;
+	var zguide = guideUtilisateur.position.z;
+	var xcam = getPosCamAxeX();
+	var ycam =  getPosCamAxeY();
+	var zcam = getPosCamAxeZ();
+
+	if(ycam > 5){
+		//console.log("La hauteur de la caméra est incorrect");
+		return false;
+	}
+	if(etat_guide == "EtatSortieEnCours" || etat_guide == "Utilisater_loin_sortie"){
+		if(xcam < xguide ){
+			//console.log("L'utilisateur est en avance par rapport au guilde xcam < xguide "+(xcam - xguide)+" "+etat_guide);
+			return false;
+		}
+	}else{
+		if(xcam > xguide ){
+			//console.log("L'utilisateur est en avance par rapport au guilde xcam > xguide "+etat_guide);
+			return false;
+		}
+	}
+
+	if(Math.abs(xcam - xguide)>= 7){
+		//console.log("l'utilisateur est loin de la portée du guide selon l'axe x"+Math.abs(xcam - xguide));
+		guideEnerve();
+		return false;
+	}
+	if(Math.abs(zcam-zguide)>=7){
+		//console.log("l'utilisateur est loin de la portée du guide selon l'axe z");
+		guideEnerve();
+		return false;
+	}
+	//console.log("l'utilisateur est dans la portée du guide")
+	return true;
+}
+
+function choisirguideUtilisateurEtat(){
+	var date = new Date();
+	var timeKnow = date.getTime();
+	if(attendre == true && ( timeKnow-timer)> 6000){
+		//console.log("Temps d'attente fini");
+		attendre=false;
+		return;
+	}else if(attendre == true){
+		//console.log("clock :"+timeKnow);
+		//console.log("Consultation tableau "+( timeKnow-timer));
+		return;
+	}
+
+	if(positionConforme()==false && positionVisite != 5 && etat_guide != "Sortie"){
+		if(etat_guide == "EtatSortieEnCours" || etat_guide == "Utilisater_loin_sortie"){
+			etat_guide = "Utilisater_loin_sortie"
+		}else{
+			etat_guide = "Utilisater_loin";
+		}
+		return;
+	}
+
+	if(positionVisite==0){
+		etat_guide = "EnMarche"
+		guideUtilisateur.rotation.y = 0;
+		if(guideUtilisateur.position.z>15.9){
+			positionVisite = 1;
+		}
+		guideUtilisateur.position.z = guideUtilisateur.position.z + 0.2;
+	}else if(positionVisite == 1){
+		guideUtilisateur.rotation.y = 45;
+		if(guideUtilisateur.position.x >15){
+			guideUtilisateur.rotation.y = 45;
+			etat_guide = "VisualisationTableau1";
+			timer =  timeKnow;
+			//console.log("timer :"+timer);
+			attendre = true;
+			positionVisite = 2;
+		}
+		guideUtilisateur.position.x = guideUtilisateur.position.x + 0.2;
+	}else if(positionVisite == 2){
+		guideUtilisateur.rotation.y = 0;
+		if(guideUtilisateur.position.z >14){
+			guideUtilisateur.rotation.y = 45;
+			etat_guide = "VisualisationTableau2";
+			timer =  timeKnow;
+			attendre = true;
+			positionVisite = 3;
+		}
+		guideUtilisateur.position.z = guideUtilisateur.position.z + 0.2;
+	}else if (positionVisite == 3){
+		guideUtilisateur.rotation.y = 135;
+		if(guideUtilisateur.position.z <13){
+			etat_guide = "VisualisationTableau3";
+			timer =  timeKnow;
+			attendre = true;
+			positionVisite = 4;
+		}
+		guideUtilisateur.position.z = guideUtilisateur.position.z - 0.2;
+	}else if(positionVisite == 4){
+		etat_guide ="EtatSortieEnCours";
+		guideUtilisateur.rotation.y = -45;
+		if(guideUtilisateur.position.x < -13 ){
+			etat_guide = "Sortie";
+			positionVisite = 5;
+		}
+		guideUtilisateur.position.x = guideUtilisateur.position.x - 0.2;
+	}
+	//console.log("etat guide : "+etat_guide)
+}
+
+function guide() {
+	guideUtilisateur = chargerObj("guide", "assets/pingouin/", "assets/pingouin/", "assets/pingouin/",
+		"penguin.obj", "penguin.mtl");
+	placerXYZ(guideUtilisateur, 20, 0, 0);
+	parentDe(scene, guideUtilisateur);
+	console.log("Fin de création de la scène");
+
+}
+
 
 var KeyboardControls = function(object){
 	this.object    = object ; 
@@ -17,7 +163,6 @@ var KeyboardControls = function(object){
 	this.aGauche   = false ; 
 	this.aDroite   = false ; 
 }
-
 
 KeyboardControls.prototype.update = function(dt){
 

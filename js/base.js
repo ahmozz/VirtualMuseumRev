@@ -38,6 +38,32 @@ function creerSphere(nom,rayon, subdivisions, materiau){
 	return mesh ;  
 }
 
+function chargerObj(nom, repertoireObj, repertoireMtl, repertoireTex, nomObj, nomMtl) {
+	var mtlLoader = new THREE.MTLLoader();
+	var objLoader = new THREE.OBJLoader();
+	var groupe = new THREE.Group();
+	groupe.name = nom;
+	mtlLoader.setTexturePath(repertoireTex);
+	mtlLoader.setPath(repertoireMtl);
+	mtlLoader.load(nomMtl, function (materials) {
+
+		materials.preload();
+
+		objLoader.setMaterials(materials);
+		objLoader.setPath(repertoireObj);
+		objLoader.load(nomObj, function (object) {
+			groupe.add(object);
+			object.name = nom;
+			listeIntersection.push(object);
+			return groupe;
+
+		});
+
+	});
+
+	return groupe;
+
+}
 
 function creerPoster(nom,largeur, hauteur, nomImage){
 	var geo   = new THREE.PlaneGeometry(largeur, hauteur) ; 
@@ -185,3 +211,27 @@ var listeIntersection = [] ;
 
 var camPos = null;
 var camDir = null;
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+function getCamPosX() {
+	return camera.position.x;
+}
+
+function getCamPosZ() {
+	return camera.position.z;
+}
+
+function getPosCamAxeX(){
+	return camera.position.x;
+}
+
+function getPosCamAxeY(){
+	return camera.position.y;
+}
+
+function getPosCamAxeZ(){
+	return camera.position.z;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

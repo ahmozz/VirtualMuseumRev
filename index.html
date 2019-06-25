@@ -8,7 +8,9 @@
 </head>
 <body>
 	<script src="lib/three.min.js"></script>
-	<script src="js/base.js"></script>
+    <script src="lib/MTLLoader.js"></script>
+    <script src="lib/OBJLoader.js"></script>
+    <script src="js/base.js"></script>
 	<script src="js/parser.js"></script>
 	<script src="js/controleur.js"></script>
 	<script>
@@ -117,8 +119,9 @@
 			scene.add(light)
 
 			chargerDocument() ;  
-			console.log("Fin de création de la scène") ; 
-		}
+			console.log("Fin de création de la scène") ;
+            guide();
+        }
 
 
 		function animate(){
@@ -127,8 +130,9 @@
 			temps += dt ; 
 			requestAnimationFrame(animate) ; 
 			controls.update(dt) ; 
-			renderer.render(scene, camera) ; 
-		}
+			renderer.render(scene, camera) ;
+            choisirguideUtilisateurEtat();
+        }
 
 
 
@@ -136,10 +140,6 @@
 		creerScene() ; 
 		animate() ; 
 
-
-
-
-		
 
 		
 
